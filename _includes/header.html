@@ -1,0 +1,11 @@
+<header class="site-header" role="banner">
+  <div class="wrapper header-wrapper">
+    <a class="site-title-large" href="{{ "/" | relative_url }}">
+      {{ site.title }}
+    </a>
+
+    {% if site.description %}
+      <p class="site-motto">{{ site.description }}</p>
+    {% endif %}
+  </div>
+</header>
