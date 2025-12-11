@@ -219,3 +219,8 @@ h1 {
   color: #777;
   font-weight: 400;
 }
+/* Remove large gap under header on homepage */
+.home .post-list {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
