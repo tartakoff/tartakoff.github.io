@@ -52,3 +52,31 @@
 .sidebar a:hover {
   text-decoration: underline;
 }
+
+/* --- Home page polish --- */
+
+/* Style the first paragraph under the title (your intro line) */
+.home.two-column .main-column > p:first-of-type {
+  font-size: 0.95rem;
+  color: #555;
+  max-width: 40rem;
+  margin-bottom: 1.75rem;
+}
+
+/* Add a subtle divider and spacing before the post list */
+.home.two-column .post-list {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+/* Give each post a bit more breathing room */
+.home.two-column .post-list li {
+  margin-bottom: 1.75rem;
+}
+
+/* Make the date slightly quieter */
+.home.two-column .post-meta {
+  font-size: 0.8rem;
+  color: #999;
+}
