@@ -261,3 +261,35 @@ hr {
 .site-header {
   padding-top: 60px !important;
 }
+/* ---- Header polish ---- */
+
+.site-header {
+  padding-top: 50px;        /* space from blue bar */
+  padding-bottom: 16px;     /* small space before posts */
+  margin-bottom: 0;
+}
+
+/* keep header content nicely centered with the posts column */
+.header-wrapper {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+/* main title: bigger, cleaner */
+.site-title-large {
+  font-size: 2.75rem;       /* tweak up/down to taste */
+  font-weight: 700;
+  text-decoration: none;    /* remove underline on hover */
+}
+
+/* tagline: closer to title, lighter */
+.site-motto {
+  margin-top: 4px;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* make sure there’s no line above the first post */
+.post-list > li {
+  border-top: none !important;
+}
