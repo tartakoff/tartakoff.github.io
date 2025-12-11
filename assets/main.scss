@@ -312,21 +312,9 @@ hr {
   color: #555 !important;
 }
 
-/* Align header with left edge of posts */
-.header-wrapper {
-  max-width: 760px !important;   /* matches post column width */
-  margin: 0 auto !important;
-  text-align: left !important;
-  padding-left: 0 !important;    /* remove centering padding */
-}
-
 /* Left-align title and subtitle explicitly */
 .site-title-large,
 .site-motto {
-  text-align: left !important;
-}
-
-.site-header .wrapper.header-wrapper {
   text-align: left !important;
 }
 
@@ -339,12 +327,28 @@ hr {
   text-align: left !important;
 }
 
-header.site-header .wrapper {
-    margin-left: 0 !important;
-    padding-left: 0 !important;
-}
-
 .site-title-large {
     display: block;
     margin-left: 0;     /* ensure no extra shift */
+}
+
+/* ---- Header Cleanup & Styling ---- */
+
+.header-wrapper {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  /* no padding-left here – let .wrapper handle it */
+}
+
+/* keep your title + motto styles */
+.site-title-large {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-motto {
+  margin-top: 6px;
+  font-size: 1.15rem;
+  color: #555;
 }
