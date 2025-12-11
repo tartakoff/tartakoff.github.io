@@ -340,8 +340,6 @@ hr {
 }
 
 header.site-header .wrapper {
-    max-width: none !important;   /* stop it from centering */
-    margin: 0 !important;         /* remove auto-left/right margin */
-    padding-left: 0 !important;   /* remove built-in padding */
-    padding-right: 0 !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
 }
