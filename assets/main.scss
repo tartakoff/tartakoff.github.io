@@ -241,3 +241,19 @@ h1 {
   border-top: 5px solid #0067B8 !important;
   border-bottom: none !important;
 }
+
+/* Reduce space between header and first post */
+.page-content {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+.wrapper {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Optional: tighten the horizontal rule area under the header */
+hr {
+  margin-top: 0.5rem !important;
+}
