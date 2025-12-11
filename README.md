@@ -1,2 +1,2 @@
 # tartakoff.github.io
-Joe's Notepad
+Satya's Notepad
