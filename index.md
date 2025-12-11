@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Joe’s Blog
+title: Joe’s Notepad
 ---
 
 Welcome to my blog.
