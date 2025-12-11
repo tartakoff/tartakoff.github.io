@@ -2,53 +2,44 @@
 layout: default
 ---
 
-<div class="home two-column">
+<div class="home">
 
-  <!-- Main center column with posts -->
-  <div class="main-column">
-    {{ content }}
+  <!-- Site Title -->
+  <h1>{{ site.title }}</h1>
 
-    {% if site.posts.size > 0 %}
-      <ul class="post-list">
-        {% for post in site.posts %}
-          <li>
-            <span class="post-meta">
-              {{ post.date | date: "%b %-d, %Y" }}
-            </span>
-            <h3>
-              <a class="post-link" href="{{ post.url | relative_url }}">
-                {{ post.title | escape }}
-              </a>
-            </h3>
+  <!-- Tagline shown ONLY once -->
+  {% if site.description %}
+  <p class="tagline">{{ site.description }}</p>
+  {% endif %}
 
-            {% if post.featured %}
-              <!-- Show full content (including embedded video) for featured post -->
-              {{ post.content }}
-            {% else %}
-              <!-- For other posts, show excerpt + Read more -->
-              {% if site.show_excerpts %}
-                {{ post.excerpt }}
-              {% endif %}
-              <p>
-                <a href="{{ post.url | relative_url }}">Read more →</a>
-              </p>
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul>
-    {% endif %}
+  <hr>
+
+  <!-- Blog Posts -->
+  <div class="posts">
+    {% for post in site.posts %}
+      <article class="post">
+
+        <h2>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h2>
+
+        <p class="post-date">{{ post.date | date: "%b %-d, %Y" }}</p>
+
+        {% if post.featured_video %}
+          <div class="video-embed">
+            {{ post.featured_video }}
+          </div>
+          <p><a href="{{ post.url | relative_url }}">Read more →</a></p>
+
+        {% else %}
+          <p>
+            {{ post.excerpt | strip_html | truncate: 220 }}
+          </p>
+          <p><a href="{{ post.url | relative_url }}">Read more →</a></p>
+        {% endif %}
+
+      </article>
+    {% endfor %}
   </div>
-
-  <!-- Right-hand sidebar -->
-  <aside class="sidebar">
-    <h3>About</h3>
-    <p><a href="{{ '/bio/' | relative_url }}">Read my bio</a></p>
-
-    <h3>Connect</h3>
-    <ul class="sidebar-links">
-      <li><a href="https://x.com/satyanadella" target="_blank" rel="noopener">X</a></li>
-      <li><a href="https://www.linkedin.com/in/satyanadella" target="_blank" rel="noopener">LinkedIn</a></li>
-    </ul>
-  </aside>
 
 </div>
