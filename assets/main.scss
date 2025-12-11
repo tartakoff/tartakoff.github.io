@@ -257,3 +257,13 @@ h1 {
 hr {
   margin-top: 0.5rem !important;
 }
+/* Remove header line */
+.header-border {
+  border-bottom: none !important;
+}
+
+/* Remove extra space under header */
+.site-header {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
