@@ -224,3 +224,10 @@ h1 {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
+
+/* Make the top horizontal rule blue */
+.header-divider {
+    border: none;
+    border-top: 3px solid #0050B3; /* Microsoft's blue */
+    margin: 0;
+}
