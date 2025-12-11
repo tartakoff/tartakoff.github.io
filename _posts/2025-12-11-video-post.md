@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A fun app I built"
+title: "A Fun App I Built"
 featured: true
 ---
 
