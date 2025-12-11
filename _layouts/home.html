@@ -14,6 +14,8 @@ layout: default
 
     {% if site.posts.size > 0 %}
       <ul class="post-list">
+        {% assign featured_post = site.posts | where: "featured", true | first %}
+
         {% for post in site.posts %}
           <li>
             <span class="post-meta">
@@ -25,11 +27,11 @@ layout: default
               </a>
             </h3>
 
-            {% if forloop.first %}
-              {# Show full content for the newest post (e.g., video post) #}
+            {% if featured_post and post.url == featured_post.url %}
+              {# Show full content (including video) for the featured post #}
               {{ post.content }}
             {% else %}
-              {# For other posts, show excerpt + Read more link #}
+              {# For all other posts, show excerpt + Read more #}
               {% if site.show_excerpts %}
                 {{ post.excerpt }}
               {% endif %}
@@ -50,8 +52,8 @@ layout: default
 
     <h3>Connect</h3>
     <ul class="sidebar-links">
-      <li><a href="https://x.com/tartakoff" target="_blank" rel="noopener">X</a></li>
-      <li><a href="https://www.linkedin.com/in/tartakoff" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://x.com/YOUR_HANDLE" target="_blank" rel="noopener">X</a></li>
+      <li><a href="https://www.linkedin.com/in/YOUR_PROFILE" target="_blank" rel="noopener">LinkedIn</a></li>
     </ul>
   </aside>
 
