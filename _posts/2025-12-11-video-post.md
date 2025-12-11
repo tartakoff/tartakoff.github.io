@@ -3,7 +3,7 @@ layout: post
 title: "A fun app I built"
 ---
 
-Was fun to be at a dev event in Bengaluru and demo an app I built recently for deep research with multiple models and decision frameworks...think of it as "chain of debate"... Next stop, Copilot!!
+Was fun to be at a dev event in Bengaluru last week and demo an app I built recently for deep research with multiple models and decision frameworks...think of it as "chain of debate"... Next stop, Copilot!!
 
 <div style="margin: 2rem 0;">
   <iframe 
