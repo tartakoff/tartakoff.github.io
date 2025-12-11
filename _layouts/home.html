@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<div style="display:flex; gap:2rem; align-items:flex-start;">
+<div class="home two-column">
 
   <!-- Main center column with posts -->
-  <div style="flex:3;">
+  <div class="main-column">
     {% if page.title %}
       <h1 class="page-heading">{{ page.title }}</h1>
     {% endif %}
@@ -25,8 +25,17 @@ layout: default
               </a>
             </h3>
 
-            {% if site.show_excerpts %}
-              {{ post.excerpt }}
+            {% if forloop.first %}
+              {# Show full content for the newest post (e.g., video post) #}
+              {{ post.content }}
+            {% else %}
+              {# For other posts, show excerpt + Read more link #}
+              {% if site.show_excerpts %}
+                {{ post.excerpt }}
+              {% endif %}
+              <p>
+                <a href="{{ post.url | relative_url }}">Read more →</a>
+              </p>
             {% endif %}
           </li>
         {% endfor %}
@@ -35,24 +44,14 @@ layout: default
   </div>
 
   <!-- Right-hand sidebar -->
-  <aside style="flex:1; font-size:0.95rem; border-left:1px solid #eee; padding-left:1.5rem;">
-    <h3 style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.08em; margin-top:0; margin-bottom:0.75rem;">
-      About
-    </h3>
-    <p style="margin-bottom:1.5rem;">
-      <a href="{{ '/bio/' | relative_url }}">Read my bio</a>
-    </p>
+  <aside class="sidebar">
+    <h3>About</h3>
+    <p><a href="{{ '/bio/' | relative_url }}">Read my bio</a></p>
 
-    <h3 style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.08em; margin-top:0; margin-bottom:0.75rem;">
-      Connect
-    </h3>
-    <ul style="list-style:none; padding:0; margin:0;">
-      <li style="margin-bottom:0.5rem;">
-        <a href="https://x.com/tartakoff" target="_blank" rel="noopener">X</a>
-      </li>
-      <li style="margin-bottom:0.5rem;">
-        <a href="https://www.linkedin.com/in/tartakoff" target="_blank" rel="noopener">LinkedIn</a>
-      </li>
+    <h3>Connect</h3>
+    <ul class="sidebar-links">
+      <li><a href="https://x.com/YOUR_HANDLE" target="_blank" rel="noopener">X</a></li>
+      <li><a href="https://www.linkedin.com/in/YOUR_PROFILE" target="_blank" rel="noopener">LinkedIn</a></li>
     </ul>
   </aside>
 
