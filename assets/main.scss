@@ -1,94 +1,46 @@
 ---
 ---
 
-// Pull in the base Minima styling
+/* Use Minima as the base theme */
 @import "minima";
 
-// Two-column layout for home
+/* ============================
+   Layout + Global Structure
+   ============================ */
+
+/* Center the whole site and control width */
+.wrapper {
+  max-width: 950px;
+  padding: 3.5rem 2rem 2rem;
+  margin: 0 auto;
+}
+
+/* Home layout: main column + right sidebar */
 .home.two-column {
   display: flex;
   gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-/* Main blog column */
+/* Main content column */
 .main-column {
   flex: 3;
 }
 
-/* Right sidebar */
+/* Right-hand sidebar */
 .sidebar {
   flex: 1;
   font-size: 0.95rem;
-  border-left: 1px solid #eee;
-  padding-left: 1.5rem;
+  border-left: 1px solid #e6e6e6;
+  padding-left: 2rem;
+  margin-left: 2rem;
+  margin-top: 0.55rem;
 }
 
-.sidebar h3 {
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-top: 0;
-  margin-bottom: 0.75rem;
-}
-
-.sidebar p {
-  margin-bottom: 1.5rem;
-}
-
-.sidebar-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.sidebar-links li {
-  margin-bottom: 0.5rem;
-}
-
-.sidebar a {
-  text-decoration: none;
-}
-
-.sidebar a:hover {
-  text-decoration: underline;
-}
-
-/* --- Home page polish --- */
-
-/* Style the first paragraph under the title (your intro line) */
-.home.two-column .main-column > p:first-of-type {
-  font-size: 0.95rem;
-  color: #555;
-  max-width: 40rem;
-  margin-bottom: 1.75rem;
-}
-
-/* Add a subtle divider and spacing before the post list */
-.home.two-column .post-list {
-  margin-top: 1.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid #eee;
-}
-
-/* Give each post a bit more breathing room */
-.home.two-column .post-list li {
-  margin-bottom: 1.75rem;
-}
-
-/* Make the date slightly quieter */
-.home.two-column .post-meta {
-  font-size: 0.8rem;
-  color: #999;
-}
-
-/* --- Elegant CEO Notebook Design --- */
-
-/* Make the whole page less wide and more centered */
-.wrapper {
-  max-width: 950px;
-  padding: 2rem 2rem;
-  margin: 0 auto;
-}
+/* ============================
+   Typography + Spacing
+   ============================ */
 
 /* Top navigation refinement */
 .site-nav {
@@ -96,15 +48,16 @@
   letter-spacing: 0.02em;
 }
 
-/* Add elegant spacing to page titles */
-.page-heading, h1 {
+/* Page titles and H1s */
+.page-heading,
+h1 {
   margin-bottom: 1rem;
   font-size: 1.9rem;
   font-weight: 500;
   letter-spacing: -0.01em;
 }
 
-/* Improve intro text readability */
+/* Home intro text (first paragraph under the title) */
 .home.two-column .main-column > p:first-of-type {
   font-size: 1.05rem;
   color: #444;
@@ -113,32 +66,27 @@
   margin-bottom: 1.8rem;
 }
 
-/* Add an understated section separator above posts */
+/* Post list on home: subtle divider + spacing */
 .home.two-column .post-list {
   margin-top: 2rem;
   padding-top: 1.8rem;
   border-top: 1px solid #e5e5e5;
 }
 
-/* Space posts more elegantly */
+/* Each post item spacing */
 .home.two-column .post-list li {
   margin-bottom: 2.2rem;
 }
 
-/* Quiet the dates */
+/* Dates: quiet and subtle */
 .post-meta {
   font-size: 0.8rem;
   color: #999;
 }
 
-/* Sidebar modernization */
-.sidebar {
-  flex: 1;
-  font-size: 0.95rem;
-  padding-left: 2rem;
-  border-left: 1px solid #ececec;
-  margin-top: 0.55rem;
-}
+/* ============================
+   Sidebar Styling
+   ============================ */
 
 .sidebar h3 {
   font-size: 0.75rem !important;
@@ -146,6 +94,7 @@
   color: #777;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 0.75rem;
 }
 
@@ -159,7 +108,10 @@
   text-decoration: underline;
 }
 
-/* Improve footer readability */
+/* ============================
+   Footer
+   ============================ */
+
 .site-footer {
   font-size: 0.85rem;
   color: #777;
@@ -167,19 +119,23 @@
   padding-top: 1.5rem;
 }
 
-/* Mobile optimization */
+/* ============================
+   Mobile
+   ============================ */
+
 @media (max-width: 900px) {
   .home.two-column {
     flex-direction: column;
   }
+
   .sidebar {
     border-left: none;
     padding-left: 0;
+    margin-left: 0;
     margin-top: 2rem;
   }
-}
 
-/* Center main content more smoothly */
-.home.two-column {
-  justify-content: center;
+  .wrapper {
+    padding: 2rem 1.25rem;
+  }
 }
