@@ -2,6 +2,68 @@
 layout: default
 ---
 
+<style>
+  .home.two-column {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .main-column {
+    flex: 3;
+  }
+
+  .sidebar {
+    flex: 1;
+    font-size: 0.95rem;
+    border-left: 1px solid #eee;
+    padding-left: 1.5rem;
+  }
+
+  .sidebar h3 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+  }
+
+  .sidebar p {
+    margin-bottom: 1.5rem;
+  }
+
+  .sidebar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sidebar-links li {
+    margin-bottom: 0.5rem;
+  }
+
+  .sidebar a {
+    text-decoration: none;
+  }
+
+  .sidebar a:hover {
+    text-decoration: underline;
+  }
+
+  /* On phones/tablets, stack them again */
+  @media (max-width: 900px) {
+    .home.two-column {
+      flex-direction: column;
+    }
+
+    .sidebar {
+      border-left: none;
+      padding-left: 0;
+      margin-top: 2rem;
+    }
+  }
+</style>
+
 <div class="home two-column">
 
   <!-- Main center column with posts -->
@@ -41,8 +103,8 @@ layout: default
 
     <h3>Connect</h3>
     <ul class="sidebar-links">
-      <li><a href="https://x.com/satyanadella" target="_blank" rel="noopener">X</a></li>
-      <li><a href="https://www.linkedin.com/in/satyanadella" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://x.com/tartakoff" target="_blank" rel="noopener">X</a></li>
+      <li><a href="https://www.linkedin.com/in/tartakoff" target="_blank" rel="noopener">LinkedIn</a></li>
     </ul>
   </aside>
 
