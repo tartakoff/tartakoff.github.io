@@ -1,0 +1,11 @@
+title: Joe's Notepad
+description: My latest thoughts
+theme: minima
+
+# These help links and SEO (optional but nice)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+url: "https://tartakoff.github.io"
+baseurl: ""   # keep empty for user site
