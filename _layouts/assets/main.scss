@@ -1,0 +1,54 @@
+---
+---
+
+// Pull in the base Minima styling
+@import "minima";
+
+// Two-column layout for home
+.home.two-column {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Main blog column */
+.main-column {
+  flex: 3;
+}
+
+/* Right sidebar */
+.sidebar {
+  flex: 1;
+  font-size: 0.95rem;
+  border-left: 1px solid #eee;
+  padding-left: 1.5rem;
+}
+
+.sidebar h3 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.sidebar p {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-links li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar a {
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
