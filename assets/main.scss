@@ -269,12 +269,6 @@ hr {
   margin-bottom: 0;
 }
 
-/* keep header content nicely centered with the posts column */
-.header-wrapper {
-  max-width: 840px;
-  margin: 0 auto;
-}
-
 /* main title: bigger, cleaner */
 .site-title-large {
   font-size: 2.75rem;       /* tweak up/down to taste */
@@ -292,13 +286,6 @@ hr {
 /* make sure there’s no line above the first post */
 .post-list > li {
   border-top: none !important;
-}
-
-.header-wrapper {
-  max-width: 760px !important;
-  margin: 0 auto !important;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .site-title-large {
@@ -332,23 +319,56 @@ hr {
     margin-left: 0;     /* ensure no extra shift */
 }
 
-/* ---- Header Cleanup & Styling ---- */
+/* ---- Header ---- */
 
+/* keep the global wrapper as-is for layout */
+.wrapper {
+  max-width: 950px;
+  padding: 3.5rem 2rem 2rem;
+  margin: 0 auto;
+}
+
+/* header spacing only – no left/right padding here */
 .header-wrapper {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  /* no padding-left here – let .wrapper handle it */
 }
 
-/* keep your title + motto styles */
+/* main title */
 .site-title-large {
   font-size: 2.8rem;
   font-weight: 700;
+  color: #222;
   text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
+.site-title-large:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+/* tagline */
 .site-motto {
   margin-top: 6px;
   font-size: 1.15rem;
   color: #555;
+  font-weight: 400;
+  text-align: left;
+}
+
+/* optional: blue bar and tighter gap under header */
+.site-header {
+  border-top: 5px solid #0067B8;
+  border-bottom: none;
+  padding-top: 50px;
+  padding-bottom: 16px;
+  margin-bottom: 0;
+}
+
+/* no extra gap before first post list on home */
+.home .post-list {
+  margin-top: 0;
+  padding-top: 0;
 }
