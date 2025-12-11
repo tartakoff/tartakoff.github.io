@@ -80,3 +80,101 @@
   font-size: 0.8rem;
   color: #999;
 }
+
+/* --- Elegant CEO Notebook Design --- */
+
+/* Make the whole page less wide and more centered */
+.wrapper {
+  max-width: 950px;
+  padding: 2rem 2rem;
+  margin: 0 auto;
+}
+
+/* Top navigation refinement */
+.site-nav {
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+}
+
+/* Add elegant spacing to page titles */
+.page-heading, h1 {
+  margin-bottom: 1rem;
+  font-size: 1.9rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+/* Improve intro text readability */
+.home.two-column .main-column > p:first-of-type {
+  font-size: 1.05rem;
+  color: #444;
+  max-width: 42rem;
+  line-height: 1.55;
+  margin-bottom: 1.8rem;
+}
+
+/* Add an understated section separator above posts */
+.home.two-column .post-list {
+  margin-top: 2rem;
+  padding-top: 1.8rem;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Space posts more elegantly */
+.home.two-column .post-list li {
+  margin-bottom: 2.2rem;
+}
+
+/* Quiet the dates */
+.post-meta {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+/* Sidebar modernization */
+.sidebar {
+  flex: 1;
+  font-size: 0.95rem;
+  padding-left: 2rem;
+  border-left: 1px solid #ececec;
+  margin-top: 0.55rem;
+}
+
+.sidebar h3 {
+  font-size: 0.75rem !important;
+  font-weight: 600;
+  color: #777;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+/* Sidebar links */
+.sidebar a {
+  color: #2a5db0;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* Improve footer readability */
+.site-footer {
+  font-size: 0.85rem;
+  color: #777;
+  letter-spacing: 0.02em;
+  padding-top: 1.5rem;
+}
+
+/* Mobile optimization */
+@media (max-width: 900px) {
+  .home.two-column {
+    flex-direction: column;
+  }
+  .sidebar {
+    border-left: none;
+    padding-left: 0;
+    margin-top: 2rem;
+  }
+}
