@@ -10,7 +10,7 @@ Was fun to be at a dev event in Bengaluru last week and demo an app I built rece
   <iframe 
     width="100%" 
     height="420" 
-    src="https://www.youtube.com/embed/n3mdk7wTH5s"
+    src="https://www.youtube.com/embed/SEZADIErqyw"
     title="YouTube video"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
