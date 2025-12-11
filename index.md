@@ -3,4 +3,4 @@ layout: home
 title: Joe’s Notepad
 ---
 
-Welcome to my blog.
+Notes on AI, leadership, and the world as I see it.
