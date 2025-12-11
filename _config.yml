@@ -2,6 +2,8 @@ title: Joe's Notepad
 description: My latest thoughts
 theme: minima
 
+show_excerpts: true
+
 # These help links and SEO (optional but nice)
 plugins:
   - jekyll-feed
