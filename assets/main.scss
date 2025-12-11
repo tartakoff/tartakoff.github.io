@@ -149,3 +149,47 @@ h1 {
 .footer-inner p {
   margin: 0;
 }
+
+/* ---- Footer ---- */
+
+.site-footer {
+  border-top: 1px solid #eeeeee;
+  margin-top: 3rem;
+  padding: 1.5rem 0 2rem;
+  font-size: 0.9rem;
+  color: #777777;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-right {
+  margin: 0.25rem 0;
+}
+
+.footer-title {
+  font-weight: 500;
+}
+
+.footer-tagline {
+  max-width: 420px;
+  text-align: right;
+}
+
+/* Stack nicely on small screens */
+@media (max-width: 600px) {
+  .footer-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-tagline {
+    text-align: left;
+    margin-top: 0.25rem;
+  }
+}
