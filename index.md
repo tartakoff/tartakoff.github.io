@@ -1,2 +1,6 @@
-# Hello world
-This is my GitHub Pages site.
+---
+layout: home
+title: Joe’s Blog
+---
+
+Welcome to my blog.
