@@ -402,3 +402,24 @@ hr {
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
+
+/* ============================
+   #1 Reduce massive whitespace
+   ============================ */
+
+/* Let content take up more real estate */
+.post,
+.page-content {
+  max-width: 900px !important;
+  margin-left: 0 !important;
+}
+
+/* Allow homepage two-column layout to use full width */
+.home.two-column {
+  max-width: 100% !important;
+}
+
+/* (Optional) readable line length inside posts */
+.post-content {
+  max-width: 48rem;
+}
