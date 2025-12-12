@@ -445,3 +445,25 @@ hr {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
+
+/* ========================================
+   Align header exactly with blog content
+   ======================================== */
+
+/* Remove internal padding so header uses the wrapper's alignment */
+.site-header {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* The header-wrapper should not add its own left padding */
+.header-wrapper {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* Ensure title and motto align with wrapper content */
+.site-title-large,
+.site-motto {
+  margin-left: 0 !important;
+}
