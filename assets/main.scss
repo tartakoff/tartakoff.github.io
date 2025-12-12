@@ -402,3 +402,13 @@ hr {
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
+
+/* Make links and title use Microsoft blue */
+a,
+a:visited {
+  color: #005fb8 !important;
+}
+
+.site-title-large {
+  color: #005fb8 !important;
+}
