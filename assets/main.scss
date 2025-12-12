@@ -423,3 +423,25 @@ hr {
 .post-content {
   max-width: 48rem;
 }
+
+/* ============================
+   #3 Tighten header → first post
+   ============================ */
+
+/* Slightly tighter header */
+.site-header {
+  padding-bottom: 8px !important;   /* was ~16px */
+  margin-bottom: 0 !important;
+}
+
+/* Reduce space at top of main content area */
+.page-content > .wrapper {
+  padding-top: 0.5rem !important;   /* or 0 if you want it ultra-tight */
+  margin-top: 0 !important;
+}
+
+/* Make sure post list doesn't add its own gap on home */
+.home .post-list {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
