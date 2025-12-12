@@ -1,4 +1,4 @@
-# Satya's Scrdatchpad
+# Satya's Scratchpad
 
 This repository powers **Satya’s Scratchpad**, a minimalist blog built with GitHub Pages and Jekyll.  
 The site focuses on notes and reflections about AI, leadership, technology, and the world as I see it.
