@@ -412,3 +412,22 @@ a:visited {
 .site-title-large {
   color: #005fb8 !important;
 }
+
+.home.two-column .post-list li {
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.post-content iframe {
+  width: 100%;
+  border-radius: 4px; /* optional */
+}
+
+.home.two-column .post-list li {
+  margin-bottom: 2.8rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
