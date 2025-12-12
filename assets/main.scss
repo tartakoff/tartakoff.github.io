@@ -431,3 +431,15 @@ a:visited {
   list-style: none;
   padding: 0;
 }
+
+/* Remove leftover indentation when bullets are removed */
+.sidebar ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.sidebar li {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
